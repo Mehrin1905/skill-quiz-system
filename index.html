@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skill Quiz System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Start -->
+  <div id="startScreen">
+    <h1>Skill Quiz</h1>
+    <input type="text" id="username" placeholder="Enter your name">
+    <button onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <!-- Quiz -->
+  <div id="quizScreen" class="hidden">
+    <h2 id="question"></h2>
+    <div id="answers"></div>
+    <button onclick="nextQuestion()">Next</button>
+  </div>
+
+  <!-- Result -->
+  <div id="resultScreen" class="hidden">
+    <h2 id="resultText"></h2>
+    <p id="scoreText"></p>
+    <button onclick="showContest()">Go to Contest</button>
+  </div>
+
+  <!-- Contest -->
+  <div id="contestScreen" class="hidden">
+    <h2>Weekly Contest</h2>
+    <p id="contestMsg"></p>
+    <p id="countdown"></p>
+    <button onclick="showRank()">Check Rank</button>
+  </div>
+
+  <!-- Rank -->
+  <div id="rankScreen" class="hidden">
+    <h2 id="rankText"></h2>
+    <p id="hackathonText"></p>
+    <button onclick="restart()">Restart</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
